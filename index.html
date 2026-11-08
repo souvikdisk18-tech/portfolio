@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <title>Suman Garai | Web Designer &amp; Software Developer</title>
+  
+  <!-- Google Fonts: Bebas Neue, Caveat & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css?v=8.0" />
+</head>
+<body>
+
+  <!-- SVG Filter for "The Boys" Style Rough, Distressed, Grunge Typography -->
+  <svg width="0" height="0" class="svg-filter-def" aria-hidden="true">
+    <defs>
+      <filter id="boys-grunge" x="-10%" y="-10%" width="120%" height="120%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.04 0.85" numOctaves="4" result="noise" />
+        <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" xChannelSelector="R" yChannelSelector="G" result="displaced" />
+        <feComposite in="displaced" in2="SourceGraphic" operator="in" />
+      </filter>
+    </defs>
+  </svg>
+
+  <!-- Pinned Fullscreen Background Canvas (Scroll-Driven Video Scrubbing) -->
+  <canvas id="animation-canvas"></canvas>
+
+  <!-- Foreground Content Wrapper (position: relative; z-index: 10) -->
+  <div class="site-wrapper">
+
+    <!-- Top Navigation Header -->
+    <header class="site-header">
+      <div class="header-inner">
+        <div class="header-brand glass-pill-header">
+          <span class="brand-tag">SUMAN GARAI</span>
+          <span class="brand-sub">WEB DESIGNER &amp; SOFTWARE DEVELOPER</span>
+        </div>
+        
+        <!-- Top Right: Available for Freelancing without star icon -->
+        <div class="header-status glass-pill-header">
+          <span class="status-text">Available for Freelancing</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content Sections -->
+    <main class="main-content">
+
+      <!-- ====================================================================
+           SECTION 1: HERO
+           ==================================================================== -->
+      <section id="hero" class="hero-section">
+        
+        <!-- Tall, Condensed Distressed Grunge "PORTFOLIO" Heading (The Boys Style) -->
+        <div class="hero-heading-container">
+          <h1 class="hero-rich-portfolio-title">PORTFOLIO</h1>
+        </div>
+
+        <!-- Hero Content Grid: Left Info | Right Opportunity Status -->
+        <div class="hero-grid">
+          
+          <!-- Left Column: Introduction & Details in subtle blurred boxes -->
+          <div class="hero-left-column">
+            
+            <!-- Box 1: Greeting on Line 1, Suman Garai on Line 2 (Larger) -->
+            <div class="glass-text-box name-box">
+              <span class="hero-greeting-line">Hello, I’m</span>
+              <h2 class="hero-name-line">Suman Garai</h2>
+            </div>
+
+            <!-- Box 2: Professional Title -->
+            <div class="glass-text-box role-box">
+              <h3 class="hero-role">Web Designer | Software Developer | Digital Marketing</h3>
+            </div>
+
+            <!-- Box 3: Exact Requested Bio Copy -->
+            <div class="glass-text-box bio-box">
+              <p class="hero-bio">
+                I create clean, modern websites and turn ideas into reality. You can reach out to me for web development, digital marketing, AI automation, content creation, and graphic design. Scroll through my portfolio to connect with me!
+              </p>
+            </div>
+
+            <!-- Box 4: Clickable "Connect Me" Pill that smoothly scrolls to Contact -->
+            <a href="#contact" class="glass-text-box connect-me-btn">
+              <span class="connect-text">Connect Me</span>
+              <span class="connect-arrow">↓</span>
+            </a>
+
+          </div>
+
+          <!-- Right Column: Kept only "Ready for Opportunities" -->
+          <div class="hero-right-column">
+            <div class="glass-text-box opportunity-card-box">
+              <div class="opportunity-indicator">
+                <span class="pulse-dot"></span>
+                <span class="opportunity-badge-text">STATUS: ACTIVE</span>
+              </div>
+              <h3 class="opportunity-headline">Ready for Opportunities</h3>
+              <p class="opportunity-sub">open for part time roles connect freelancing projects</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           SECTION 2: MY PROJECTS (Preserved exactly as requested)
+           ==================================================================== -->
+      <section id="projects" class="projects-section">
+        
+        <div class="section-header-row glass-text-box header-blur-box">
+          <div class="title-with-pill">
+            <h2 class="section-main-title">MY PROJECTS</h2>
+            <span class="title-sub-badge">4 SPECIALIZED CATEGORIES</span>
+          </div>
+          <a href="#projects" class="view-all-btn">
+            <span>VIEW ALL PROJECTS</span>
+            <span class="arrow">→</span>
+          </a>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- Project 01: Poster Design -->
+          <article class="project-card">
+            <div class="mockup-screen mockup-poster">
+              <div class="mockup-bar">
+                <div class="mockup-indicator"></div>
+                <span class="mockup-url">creatives.sumangarai.design</span>
+              </div>
+              <div class="mockup-content poster-content">
+                <div class="category-badge">CATEGORY 01</div>
+                <h3 class="mockup-headline">POSTER<br><span class="accent-text">DESIGN</span></h3>
+                <p class="mockup-sub">HIGH-IMPACT EDITORIAL &amp; GRAPHIC ART</p>
+                <div class="mockup-sample-pill">🎨 CREATIVE TYPOGRAPHY</div>
+              </div>
+            </div>
+            
+            <div class="card-caption">
+              <span class="project-index">01</span>
+              <div class="project-info">
+                <h4 class="project-title">Poster Design</h4>
+                <p class="project-type">Visual &amp; Brand Art</p>
+              </div>
+              <div class="project-arrow">→</div>
+            </div>
+          </article>
+
+          <!-- Project 02: AI Video Editing -->
+          <article class="project-card">
+            <div class="mockup-screen mockup-video">
+              <div class="mockup-bar">
+                <div class="mockup-indicator"></div>
+                <span class="mockup-url">studio.aivideo.suman.io</span>
+              </div>
+              <div class="mockup-content video-content">
+                <div class="category-badge">CATEGORY 02</div>
+                <h3 class="mockup-headline">AI VIDEO<br><span class="accent-text">EDITING</span></h3>
+                <p class="mockup-sub">CINEMATIC SYNTHESIS &amp; DYNAMIC MOTION</p>
+                <div class="mockup-sample-pill">🎬 4K NEURAL RENDER</div>
+              </div>
+            </div>
+            
+            <div class="card-caption">
+              <span class="project-index">02</span>
+              <div class="project-info">
+                <h4 class="project-title">AI Video Editing</h4>
+                <p class="project-type">Next-Gen Media Production</p>
+              </div>
+              <div class="project-arrow">→</div>
+            </div>
+          </article>
+
+          <!-- Project 03: Web Development -->
+          <article class="project-card">
+            <div class="mockup-screen mockup-webdev">
+              <div class="mockup-bar">
+                <div class="mockup-indicator"></div>
+                <span class="mockup-url">nexus.webdev.suman.tech</span>
+              </div>
+              <div class="mockup-content webdev-content">
+                <div class="category-badge">CATEGORY 03</div>
+                <h3 class="mockup-headline">WEB<br><span class="accent-text">DEVELOPMENT</span></h3>
+                <p class="mockup-sub">FAST, RESPONSIVE &amp; MODERN WEB APPS</p>
+                <div class="mockup-sample-pill">&lt;/&gt; FULL-STACK ARCHITECTURE</div>
+              </div>
+            </div>
+            
+            <div class="card-caption">
+              <span class="project-index">03</span>
+              <div class="project-info">
+                <h4 class="project-title">Web Development</h4>
+                <p class="project-type">Interactive &amp; Modern Websites</p>
+              </div>
+              <div class="project-arrow">→</div>
+            </div>
+          </article>
+
+          <!-- Project 04: Digital Marketing -->
+          <article class="project-card">
+            <div class="mockup-screen mockup-marketing">
+              <div class="mockup-bar">
+                <div class="mockup-indicator"></div>
+                <span class="mockup-url">pulse.digitalmarketing.pro</span>
+              </div>
+              <div class="mockup-content marketing-content">
+                <div class="category-badge">CATEGORY 04</div>
+                <h3 class="mockup-headline">DIGITAL<br><span class="accent-text">MARKETING</span></h3>
+                <p class="mockup-sub">DATA-DRIVEN SEO &amp; BRAND SCALING</p>
+                <div class="mockup-sample-pill">📈 HIGH-CONVERSION CAMPAIGNS</div>
+              </div>
+            </div>
+            
+            <div class="card-caption">
+              <span class="project-index">04</span>
+              <div class="project-info">
+                <h4 class="project-title">Digital Marketing</h4>
+                <p class="project-type">Growth Strategy &amp; Analytics</p>
+              </div>
+              <div class="project-arrow">→</div>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           SECTION 3: EDUCATION & SKILLS + WORK PROCESS + PHILOSOPHY CARD
+           ==================================================================== -->
+      <section id="experience" class="tri-section">
+        <div class="tri-grid">
+
+          <!-- Column 1: Education & Skills -->
+          <div class="panel-box edu-skills-panel">
+            <div class="glass-text-box title-mini-box">
+              <h3 class="panel-title">EDUCATION &amp; SKILLS</h3>
+            </div>
+
+            <!-- Education Box (Kept exactly as it is) -->
+            <div id="education" class="glass-text-box education-container-box">
+              <h4 class="sub-label">EDUCATION</h4>
+              
+              <div class="timeline-row">
+                <div class="timeline-info">
+                  <h5 class="timeline-degree">B.Tech in Information Technology</h5>
+                  <p class="timeline-inst">NSEC (Netaji Subhash Engineering College)</p>
+                  <span class="timeline-role-badge">Role: Software Developer</span>
+                </div>
+                <span class="timeline-year">2026 – 2030</span>
+              </div>
+            </div>
+
+            <!-- Skills Box (11 Skills) -->
+            <div id="skills" class="glass-text-box skills-container-box">
+              <h4 class="sub-label">SKILLS</h4>
+              <div class="skills-cloud">
+                <span class="skill-pill">Web Designing</span>
+                <span class="skill-pill">Graphic Designing</span>
+                <span class="skill-pill">HTML</span>
+                <span class="skill-pill">CSS</span>
+                <span class="skill-pill">JavaScript</span>
+                <span class="skill-pill">AI Automation</span>
+                <span class="skill-pill">AI Agents</span>
+                <span class="skill-pill">Generative AI</span>
+                <span class="skill-pill">Agentic AI</span>
+                <span class="skill-pill">Digital Marketing</span>
+                <span class="skill-pill">Poster Designing</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Column 2: Work Process Timeline (Kept exactly as it is) -->
+          <div class="panel-box work-process-panel">
+            <div class="glass-text-box title-mini-box">
+              <h3 class="panel-title">WORK PROCESS</h3>
+            </div>
+
+            <div class="glass-text-box process-steps-box">
+              <div class="process-steps">
+                
+                <div class="process-node">
+                  <div class="node-left">
+                    <span class="node-number">01</span>
+                    <div class="node-icon">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                    </div>
+                  </div>
+                  <div class="node-right">
+                    <h5 class="node-name">DISCOVER</h5>
+                    <p class="node-desc">Understanding goals, audience, and project requirements.</p>
+                  </div>
+                </div>
+
+                <div class="process-node">
+                  <div class="node-left">
+                    <span class="node-number">02</span>
+                    <div class="node-icon">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18h6"></path><path d="M10 22h4"></path><path d="M12 2a7 7 0 0 0-7 7c0 2.5 1.25 4.7 3.2 6h7.6c1.95-1.3 3.2-3.5 3.2-6a7 7 0 0 0-7-7z"></path></svg>
+                    </div>
+                  </div>
+                  <div class="node-right">
+                    <h5 class="node-name">IDEATE</h5>
+                    <p class="node-desc">Planning, wireframing, and creating the right concept.</p>
+                  </div>
+                </div>
+
+                <div class="process-node">
+                  <div class="node-left">
+                    <span class="node-number">03</span>
+                    <div class="node-icon">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg>
+                    </div>
+                  </div>
+                  <div class="node-right">
+                    <h5 class="node-name">DESIGN</h5>
+                    <p class="node-desc">Crafting visual design with a focus on user experience.</p>
+                  </div>
+                </div>
+
+                <div class="process-node">
+                  <div class="node-left">
+                    <span class="node-number">04</span>
+                    <div class="node-icon">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                    </div>
+                  </div>
+                  <div class="node-right">
+                    <h5 class="node-name">DEVELOP</h5>
+                    <p class="node-desc">Building fast, responsive, and high-performing websites.</p>
+                  </div>
+                </div>
+
+                <div class="process-node">
+                  <div class="node-left">
+                    <span class="node-number">05</span>
+                    <div class="node-icon">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                    </div>
+                  </div>
+                  <div class="node-right">
+                    <h5 class="node-name">DELIVER</h5>
+                    <p class="node-desc">Testing, optimizing, and launching with perfection.</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Column 3: Red Highlight Philosophy Card -->
+          <div class="philosophy-card">
+            
+            <div class="quote-symbol">“</div>
+            
+            <!-- Box for Quote Text -->
+            <div class="philosophy-glass-box quote-box">
+              <h4 class="highlight-tag">GOOD DESIGN, NOT JUST ART</h4>
+              <blockquote class="quote-text">
+                Good design is not just how it looks, but how it works.
+              </blockquote>
+            </div>
+
+            <!-- Box for Signature -->
+            <div class="philosophy-glass-box signature-box">
+              <span class="signature-caption">Crafted by</span>
+              <span class="signature-text">Suman</span>
+            </div>
+
+            <!-- Box for Bottom CTA -->
+            <div class="philosophy-glass-box bottom-cta-box">
+              <p class="cta-mini">LET'S CREATE SOMETHING GREAT TOGETHER.</p>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           SECTION 4: CONTACT & MODERN STREAMLINED FOOTER
+           ==================================================================== -->
+      <footer id="contact" class="contact-section">
+        
+        <div class="contact-grid">
+          
+          <!-- Left: Call To Action -->
+          <div class="contact-col-left">
+            <div class="glass-text-box cta-heading-box">
+              <h2 class="contact-title">
+                LET'S WORK<br>
+                TOGETHER
+              </h2>
+
+              <p class="contact-desc">
+                I'm currently open for new projects and collaborations. Let's create something amazing that drives results.
+              </p>
+
+              <a href="mailto:suman.garai.2607@gmail.com" class="freelance-pill">
+                <span class="pill-arrow">→</span>
+                <span>AVAILABLE FOR FREELANCE</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Middle: Functional Clickable Contacts -->
+          <div class="contact-col-middle">
+            <div class="glass-text-box contact-details-box">
+              <h4 class="box-inner-title">CONTACT INFORMATION</h4>
+              
+              <ul class="contact-links">
+                <!-- Functional Email mailto link -->
+                <li>
+                  <div class="contact-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                  </div>
+                  <div class="contact-meta">
+                    <span class="contact-label">EMAIL</span>
+                    <a href="mailto:suman.garai.2607@gmail.com" class="functional-link" title="Send Email">suman.garai.2607@gmail.com</a>
+                  </div>
+                </li>
+
+                <!-- Functional Phone tel link -->
+                <li>
+                  <div class="contact-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                  </div>
+                  <div class="contact-meta">
+                    <span class="contact-label">MOBILE</span>
+                    <a href="tel:7074316770" class="functional-link" title="Call Phone Number">+91 7074316770</a>
+                  </div>
+                </li>
+
+                <!-- Functional Google Maps Location link -->
+                <li>
+                  <div class="contact-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                  </div>
+                  <div class="contact-meta">
+                    <span class="contact-label">LOCATION</span>
+                    <a href="https://www.google.com/maps/place/Kolkata,+West+Bengal" target="_blank" rel="noopener noreferrer" class="functional-link" title="Open Kolkata in Google Maps">Kolkata, West Bengal, India</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Right: Digital Setup Preview Showcase -->
+          <div class="contact-col-right">
+            <div class="laptop-showcase">
+              <div class="laptop-screen">
+                <div class="laptop-top-bar">
+                  <span class="laptop-dot"></span>
+                  <span class="laptop-dot"></span>
+                  <span class="laptop-dot"></span>
+                </div>
+                <div class="laptop-inner">
+                  <span class="laptop-tag">SUMAN GARAI</span>
+                  <h4 class="laptop-headline">Web Designing | Software Developer | Digital Marketing</h4>
+                  <div class="laptop-grid-demo">
+                    <div class="demo-box red"></div>
+                    <div class="demo-box dark"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="laptop-base"></div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Modern Streamlined Footer Bar -->
+        <div class="modern-footer-bar glass-text-box">
+          <div class="footer-left-brand">
+            <span class="footer-logo">Suman Garai → Web Designing | Software Developer | Digital Marketing</span>
+          </div>
+
+          <div class="footer-nav-links">
+            <a href="#hero">Home</a>
+            <a href="#projects">My Projects</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+          </div>
+
+          <div class="footer-right-copy">
+            <p>Thank You for visiting My Portfolio</p>
+          </div>
+        </div>
+
+      </footer>
+
+    </main>
+  </div>
+
+  <script src="script.js?v=9.0"></script>
+</body>
+</html>
